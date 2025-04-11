@@ -113,14 +113,30 @@
           <div class="card-body">
             <h3 class="card-title">El Nido Tour</h3>
             <p class="card-text">El Nido, Palawan, Philippines, offers stunning island tours with crystal-clear waters, towering cliffs, and hidden lagoons.</p>
-            <a href="#book" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#bookingModal">View Packages</a>
+            <a href="#elnidotour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#elnidotourModal">View Packages</a>
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+        <div class="card" >
+          <img src="./assets/images/ilocos.jpg" class="card-img-top w-100" alt="uk">
+          <div class="card-body">
+            <h3 class="card-title">Ilocos Tour</h3>
+            <p class="card-text">Explore the best of northern Philippines with Ilocos tours—featuring Vigan’s Spanish colonial charm, Laoag’s historic landmarks, and Pagudpud’s stunning beaches and natural wonders.</p>
+            <a href="#ilocostour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#ilocosModal">View Packages</a>
+          </div>
+        </div>
+      </div>
+      
+     
+      
     </div>
   </div>
 </section>
   <!-- Section Packages End -->
+
+
   <!-- Section Book Start -->
   <section class="book" id="book">
     <div class="container mt-5 pb-3">
@@ -203,14 +219,42 @@
 </html>
 
 
-<!-- Modal -->
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+<!-- Modal elnidotour-->
+<div class="modal fade" id="elnidotourModal" tabindex="-1" aria-labelledby="elnidoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+      <div class="card-body text-center">
+        <!-- Picture Display -->
+        <div class="row">
+          <div class="column">  
+            <img src="assets/Package-imgs/elnidotour.png" alt="Sample Image" class="img-fluid" style="max-width: 100%; max-height: 85vh; height: auto; border-radius: 8px;">
+          </div>
+          <div class="column">  
+            <img src="assets/Package-imgs/elnidotour.png" alt="Sample Image" class="img-fluid" style="max-width: 100%; max-height: 85vh; height: auto; border-radius: 8px;">
+          </div>
+        </div>
+
+        <!-- <div class="image-viewer mt-3">
+          <img src="assets/Package-imgs/elnidotour.png" alt="Sample Image" class="img-fluid" style="max-width: 100%; max-height: 85vh; height: auto; border-radius: 8px;">
+        </div> -->
+      </div>
+      <div class="modal-footer justify-content-center" style="background: transparent; border: none;">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" id="submit">Book now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End Modal elnidotour-->
+<!-- Modal ilocos-->
+<div class="modal fade" id="ilocosModal" tabindex="-1" aria-labelledby="ilocosModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
       <div class="card-body text-center">
         <!-- Picture Display -->
         <div class="image-viewer mt-3">
-          <img src="assets/Package-imgs/elnidotour.png" alt="Sample Image" class="img-fluid" style="max-width: 100%; max-height: 85vh; height: auto; border-radius: 8px;">
+          <img src="assets/Package-imgs/Ilocos.jpg" alt="Sample Image" class="img-fluid" style="max-width: 100%; max-height: 85vh; height: auto; border-radius: 8px;">
         </div>
       </div>
       <div class="modal-footer justify-content-center" style="background: transparent; border: none;">
