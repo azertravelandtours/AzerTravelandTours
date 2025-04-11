@@ -527,9 +527,153 @@ color: #03989e;
     transition: transform 0.2s ease-in-out;
   }
 
+
+  .playbtn {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03989e;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 600;
+    letter-spacing: 4px;
+    overflow: hidden;
+    font-weight: bold;
+    background-color: #ffffff;
+
+  }
+  .playbtn:hover {
+    background: #03989e;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03989e, 0 0 25px #03989e, 0 0 50px #03989e, 0 0 200px #03989e;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
   
+  .playbtn span {
+    position: absolute;
+    display: block;
+  }
+  
+  .playbtn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, transparent, #03989e);
+    animation: animate1 1s linear infinite;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .playbtn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03989e);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  .playbtn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(270deg, transparent, #03989e);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes animate3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .playbtn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03989e);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes animate4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
 
 
+  .btninq{
+    border:none;
+    background-color:#03989e;
+    font-size:30px;
+    padding:20px 40px;
+    text-transform:capitalize;
+    cursor:pointer;
+    transform:all 0.3s;
+    position:relative;
+    color: #ffffff;
+    
+  }
+  .btninq:before{
+    content:"";
+    position :absolute;
+    width:24px;
+    height:24px;
+    top:-5px;
+      left:-5px;
+    border-top:2px solid #03989e;
+    border-left:2px solid #03989e;
+    transition:all 0.25s;
+    
+  }
+  .btninq:hover:before ,button:hover:after{
+    width:104%;
+    height:110%;
+  }
+  .btninq:after{
+    content:"";
+    position :absolute;
+    width:24px;
+    height:24px;
+    bottom:-5px;
+      right:-5px;
+    border-bottom:2px solid #03989e;
+    border-right:2px solid #03989e;
+    transition:all 0.30s;
+  }
   
 
   
