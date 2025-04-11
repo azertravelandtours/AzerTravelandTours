@@ -21,7 +21,7 @@
     window.location.href = "https://www.facebook.com/messages/t/100934352821697";
   });
 </script>
-<body>
+<body id="top">
 
 <!-- Top Bar -->
 
@@ -55,7 +55,7 @@
             <a class="nav-link" href="#packages">Packages</a>
           </li>
           <li class="nav-item  mx-1">
-            <a class="nav-link" href="#book">Book</a>
+            <a class="nav-link" href="#book">Inquire</a>
           </li>
         </ul>
       </div>
@@ -70,7 +70,7 @@
     <h5>Azer Travel & Tours</h5>
     <h1>Visit <span class="changecontent"></span></h1>
     <p>Your partner in adventure</p>
-    <a href="#book" type="button" class="btn" id="btn-new" >Book Place</a>
+    <a href="#book" type="button" class="btn" id="btn-new" >Inquire now</a>
     </div>
   </div>
 </section>
@@ -124,22 +124,29 @@
   <!-- Section Book Start -->
   <section class="book" id="book">
     <div class="container mt-5 pb-3">
-      <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>B</span>ook</h1>
+      <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>I</span>nquire</h1>
       <div class="row  justify-content-center justify-content-lg-around">
         <div class="col-10 col-lg-5 align-self-lg-center py-3 py-md-0 ">
           <div class="card">
-            <img src="./assets/images/book-img.png" alt="book-img">
+            <img src="./assets/images/azertext.png" alt="book-img">
           </div>
         </div>
         <div class="col-9 col-md-8 col-lg-5 py-md-0 ">
-          <form action="#" class="py-5">
-            <input type="text" class="form-control my-2 my-md-3" placeholder="Where To" required>
-            <input type="text" class="form-control my-2 my-md-3" placeholder="How Many" required>
-            <input type="text" class="form-control my-2 my-md-3" placeholder="Arrivals" required>
-            <input type="text" class="form-control my-2 my-md-3" placeholder="Leavind" required>
-            <textarea class="form-control my-2 my-md-3" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
-            <input type="submit" value="Book Now" class="submit my-1 my-md-2" id="btn-new">
+          <form action="https://www.facebook.com/messages/t/100934352821697" class="py-5">
+            <input type="submit" value="Inquire Now" class="submit my-1 my-md-2" id="btn-new">
           </form>
+          <div>
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:azerinquiry@gmail.com">azerinquiry@gmail.com</a> 
+          </div>
+          <div>
+            <i class="fa-brands fa-square-facebook"></i>  <a href="https://www.facebook.com/azertravelandtour">Azer Travel & Tours</a> 
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>   +639774768096 / +639561038627 
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>  248 Alapan 1B, Imus, Cavite
+          </div>
         </div>
       </div>
     </div>
@@ -153,7 +160,8 @@
 			<div class="row text-light text-center py-4 justify-content-center">
 				<div class="col-sm-10 col-md-8 col-lg-6 text-green">
 					<img src="assets/images/azer-logo.png" alt="">Azer Travel & Tours
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, similique hic perspiciatis provident eum commodi consequatur, tenetur aspernatur ipsum deleniti sunt.</p>
+					<p>Azer Travel & Tours – Your Trusted Companion for Every Adventure!
+            </p>
 					<ul class="social pt-3">
 						<li><a href="https://www.facebook.com/azertravelandtour"><ion-icon name="logo-facebook"></ion-icon></a></li>
             
@@ -173,15 +181,25 @@
 	</div>
 	<!-- End Socket -->
 
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up text-black"></i>
+      </a>
+    </div>
+  </div>
 
+
+  <script src="./assets/js/layout.js"></script>
   <!-- Bootstrap Link -->
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Bootstrap Link -->
    <!-- ICON -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
 
+  
+</body>
 </html>
 
 
@@ -217,3 +235,4 @@
 
  
 </script>
+

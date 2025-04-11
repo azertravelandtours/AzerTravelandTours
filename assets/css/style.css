@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Rubik+Mono+One&family=Sankofa+Display&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Rubik+Mono+One&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sankofa+Display&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 .text-green {
-    color: #389582;
+    color: 
+    #03989e;
     font-family: "Anton", sans-serif;
     font-style: normal;
    
@@ -15,11 +16,14 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background-color: #222222;}
-::-webkit-scrollbar-thumb { background-color: #389582; border-radius: 3px;}
-::-webkit-scrollbar-thumb:hover { background-color: #389582; border-radius: 3px;}
+::-webkit-scrollbar-thumb { background-color: #03989e; border-radius: 3px;}
+::-webkit-scrollbar-thumb:hover { background-color: #03989e; border-radius: 3px;}
 
 /*============= Constants =============*/
 #page-suptitel{
@@ -29,7 +33,7 @@
     letter-spacing: 3px;
 }
 #page-suptitel span{
-    color: #389582;
+    color: #03989e;
     font-family: "New Amsterdam", sans-serif;
     font-style: normal;
     letter-spacing: 4px;
@@ -37,7 +41,7 @@
 
 #btn-new{
     padding: 7px;
-    background-color: #389582;
+    background-color: #03989e;
     color: white;
     text-transform: uppercase;
     border-radius: 5px;
@@ -48,7 +52,7 @@
     text-decoration: none;
 }
 #btn-new:hover{
-    background-color: #389582;
+    background-color: #03989e;
 }
 
 /*============= TOP BAR HEADER =============*/
@@ -79,7 +83,7 @@ nav{
     border: none; 
 }
 .navbar-toggler span{
-    color: #389582;
+    color: #03989e;
 }
 .nav-item .nav-link{
     font-size: 18px;
@@ -92,14 +96,14 @@ nav{
 }
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover{
-    color: #389582;
-    box-shadow: 0px 2px 0px #389582;
+    color: #03989e;
+    box-shadow: 0px 2px 0px #03989e;
 }
 .navbar-collapse .form-control{
-    outline: 1px solid #389582;
+    outline: 1px solid #03989e;
 }
 .navbar-collapse .btn{
-    background: #389582;
+    background: #03989e;
     color: white;
     border-radius: 5px;
     font-family: "Anton", sans-serif;
@@ -161,7 +165,7 @@ nav{
 }
 .changecontent::after{
     content: ' ';
-    color: #389582;
+    color: #03989e;
     font-family: "Anton", sans-serif;
     font-style: normal;
     text-shadow: 0px 1px 1px black;
@@ -203,7 +207,7 @@ nav{
 .book form input,
 .book form textarea{ 
     color: black;
-    border: 1px solid #389582;
+    border: 1px solid #03989e;
     outline: none;
 }
 .book .card{
@@ -241,7 +245,7 @@ letter-spacing: 0.5px;
 }
 .services .card i{
     font-size: 4rem;
-    color: #389582;
+    color: #03989e;
     padding-top: 20px;
 }
 .services .card .card-body h3{
@@ -312,7 +316,7 @@ margin: 0 auto;
 font-size: 2rem;
 }
 .social a:hover{
-color: #389582;
+color: #03989e;
 }
   
 /*============= SOCKET =============*/
@@ -512,3 +516,16 @@ color: #389582;
   justify-content: center; /* Centers the buttons in the footer */
 }
 
+
+  .scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+  
