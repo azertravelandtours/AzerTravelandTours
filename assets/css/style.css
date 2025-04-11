@@ -517,7 +517,7 @@ color: #03989e;
 }
 
 
-  .scroll-top {
+.scroll-top {
     display: none;
     position: fixed;
     bottom: 1em;
