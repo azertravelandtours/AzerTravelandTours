@@ -531,16 +531,17 @@ color: #03989e;
   .playbtn {
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
+    padding: 20px 40px;
+    margin: 5px 0;
     color: #03989e;
     text-decoration: none;
     transition: 0.5s;
-    font-weight: 600;
+    font-weight: 50;
     letter-spacing: 4px;
     overflow: hidden;
     font-weight: bold;
     background-color: #ffffff;
+    border: none;
 
   }
   .playbtn:hover {
@@ -638,8 +639,8 @@ color: #03989e;
   .btninq{
     border:none;
     background-color:#03989e;
-    font-size:30px;
-    padding:20px 40px;
+    font-size:20px;
+    padding:10px 30px;
     text-transform:capitalize;
     cursor:pointer;
     transform:all 0.3s;
