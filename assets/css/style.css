@@ -217,7 +217,13 @@ nav{
 /*============= Section Packages =============*/
 .packages .card{
     box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, 0.499);
-} 
+}
+.packages .card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 .packages .card .card-body h3{
 font-size: 1.6rem;
 font-weight: 700;
@@ -674,6 +680,93 @@ color: #03989e;
     border-bottom:2px solid #03989e;
     border-right:2px solid #03989e;
     transition:all 0.30s;
+  }
+  
+
+  .quote-container {
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    max-width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px;
+    border: 2px solid #e4d6d6;
+  }
+  .quote-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bottom {
+    position: absolute;
+    min-height: 200px;
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+    transform: rotate(180deg);
+    width: 440px;
+  }
+  
+  .bottom svg.curves {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    transform: rotateY(180deg);
+  }
+  
+  .bottom .shape-fill {
+    fill: #03989e;
+  }
+  
+  .star-rating {
+    color: #03989e;
+    margin: 17px 0 10px;
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  p.quote {
+    margin: 15px 0;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  
+  .reviewer-photo {
+    position: relative;
+    z-index: 9;
+    margin: 20px auto 10px;
+    text-align: center;
+  }
+  
+  .reviewer-photo img {
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+  }
+  
+  .reviewer-details {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .reviewer-details .name {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    padding: 7px 0 10px 0;
+  }
+  
+  .reviewer-details .title {
+    font-size: 17px;
+    font-weight: 400;
   }
   
 
