@@ -17,7 +17,7 @@ document.addEventListener('scroll', scrollUp)
 
   function redirect()
   {
-  var url = "https://www.facebook.com/messages/t/100934352821697";
+  var url = "https://m.me/100934352821697";
   window.location.href = url;
   }
 
