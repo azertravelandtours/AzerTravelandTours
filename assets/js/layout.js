@@ -17,7 +17,7 @@ document.addEventListener('scroll', scrollUp)
 
   function redirect()
   {
-  var url = "https://m.me/100934352821697";
+  var url = "https://m.me/420634938450085";
   window.location.href = url;
   }
 
