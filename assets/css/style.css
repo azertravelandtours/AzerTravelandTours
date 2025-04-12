@@ -70,6 +70,8 @@ html {
 /*============= NAVIGATION =============*/
 nav{
     background: #f9f9f9;
+    position: fixed; /* Make it stick/fixed */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .navbar-brand img{
     transition: 0.5s ease;
@@ -533,7 +535,6 @@ color: #03989e;
     transition: transform 0.2s ease-in-out;
   }
 
-
   .playbtn {
     position: relative;
     display: inline-block;
@@ -693,12 +694,13 @@ color: #03989e;
     margin: 0 auto;
     overflow: hidden;
     padding: 40px;
-    border: 2px solid #e4d6d6;
+    border: 1px solid #e4d6d6;
   }
   .quote-container:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+    border: none;
   }
   
   .bottom {
