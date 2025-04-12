@@ -540,20 +540,19 @@ color: #03989e;
     display: inline-block;
     padding: .7em 2em;
     margin: 1em 0;
-    color: #03989e;
+    color: #fff;
     text-decoration: none;
     transition: 0.5s;
-    font-weight: 50;
+    font-weight: bolder;
     letter-spacing: .1em;
     overflow: hidden;
-    font-weight: bold;
-    background-color: #ffffff;
+    background-color:transparent;
     border: none;
 
   }
   .playbtn:hover {
     background: #03989e;
-    color: #ffffff;
+    color: #fff;
     box-shadow: 0 0 5px #03989e, 0 0 25px #03989e, 0 0 50px #03989e, 0 0 200px #03989e;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
   }
