@@ -66,13 +66,13 @@
     <h5>Azer Travel & Tours</h5>
     <h1>Visit <span class="changecontent"></span></h1>
     <h4 class="text-white">Your partner in adventure!</h4>
-    <a class="playbtn" href="#Inquire">
+    <button class="playbtn" onclick="redirect()">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       INQUIRE NOW!
-    </a>
+    </button>
     </div>
   </div>
 </section>
@@ -109,76 +109,85 @@
 <section class="packages" id="packages">
   <div class="container mt-5 pb-3">
     <h1 class="text-center mt-5 mb-2 mb-lg-4" id="page-suptitel"><span>P</span>ackages</h1>
-    <div class="row">
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/elnido.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">El Nido Tour</h3>
-            <p class="card-text">El Nido, Palawan, Philippines, offers stunning island tours with crystal-clear waters, towering cliffs, and hidden lagoons.</p>
-            <a href="#elnidotour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#elnidotourModal">View Packages</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/ilocos.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">Ilocos Tour</h3>
-            <p class="card-text">Explore the best of northern Philippines with Ilocos tours—featuring Vigan’s Spanish colonial charm, Laoag’s historic landmarks, and Pagudpud’s stunning beaches and natural wonders.</p>
-            <a href="#ilocostour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#ilocosModal">View Packages</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/boracay.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">Boracay Tour</h3>
-            <p class="card-text">Experience paradise in Boracay—famous for its powdery white sand, crystal-clear waters, vibrant nightlife, and thrilling water activities. Ideal for beach lovers, honeymooners, and adventure seekers.</p>
-            <a href="#boracaytour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#boracayModal">View Packages</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/southkorea.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">South Korea Tour</h3>
-            <p class="card-text">Discover the perfect blend of tradition and modernity in South Korea! Explore vibrant Seoul, ancient palaces, serene temples, stunning landscapes, and delicious street food. From bustling markets to peaceful mountains, it's a journey full of culture, history, and unforgettable experiences.</p>
-            <a href="#southkoreatour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#southkoreaModal">View Packages</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/japan.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">Japan Tour</h3>
-            <p class="card-text">Experience the charm of Japan—where ancient temples meet futuristic cities. Discover Tokyo's energy, Kyoto's traditions, Mount Fuji's beauty, and savor world-famous cuisine on an unforgettable cultural adventure.</p>
-            <a href="#japantour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#japanModal">View Packages</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
-        <div class="card" >
-          <img src="./assets/images/taiwan.jpg" class="card-img-top w-100" alt="uk">
-          <div class="card-body">
-            <h3 class="card-title">Taiwan Tour</h3>
-            <p class="card-text">Discover the beauty of Taiwan in a compact tour! Explore vibrant Taipei, stunning Taroko Gorge, scenic Sun Moon Lake, and rich cultural heritage at temples and night markets. Perfect blend of nature, history, and local flavors—all in one unforgettable trip.</p>
-            <a href="#taiwantour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#taiwanModal">View Packages</a>
-          </div>
-        </div>
-      </div>
+    <div class="tabs">
+      <input type="radio" name="tab" id="tab1" checked="checked">
+      <label for="tab1">Domestic Packages</label>
+      <input type="radio" name="tab" id="tab2">
+      <label for="tab2">International Packages</label>
+      <div class="tab-content-wrapper">
+        <div id="tab-content-1" class="tab-content">
+          <div class="row">
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/elnido.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">El Nido Tour</h3>
+                  <p class="card-text">El Nido, Palawan, Philippines, offers stunning island tours with crystal-clear waters, towering cliffs, and hidden lagoons.</p>
+                  <a href="#elnidotour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#elnidotourModal">View Packages</a>
+                </div>
+              </div>
+            </div>
       
-     
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/ilocos.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">Ilocos Tour</h3>
+                  <p class="card-text">Explore the best of northern Philippines with Ilocos tours—featuring Vigan’s Spanish colonial charm, Laoag’s historic landmarks, and Pagudpud’s stunning beaches and natural wonders.</p>
+                  <a href="#ilocostour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#ilocosModal">View Packages</a>
+                </div>
+              </div>
+            </div>
       
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/boracay.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">Boracay Tour</h3>
+                  <p class="card-text">Experience paradise in Boracay—famous for its powdery white sand, crystal-clear waters, vibrant nightlife, and thrilling water activities. Ideal for beach lovers, honeymooners, and adventure seekers.</p>
+                  <a href="#boracaytour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#boracayModal">View Packages</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-content-2" class="tab-content">
+          <div class="row">
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/southkorea.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">South Korea Tour</h3>
+                  <p class="card-text">Discover the perfect blend of tradition and modernity in South Korea! Explore vibrant Seoul, ancient palaces, serene temples, stunning landscapes, and delicious street food. From bustling markets to peaceful mountains, it's a journey full of culture, history, and unforgettable experiences.</p>
+                  <a href="#southkoreatour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#southkoreaModal">View Packages</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/japan.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">Japan Tour</h3>
+                  <p class="card-text">Experience the charm of Japan—where ancient temples meet futuristic cities. Discover Tokyo's energy, Kyoto's traditions, Mount Fuji's beauty, and savor world-famous cuisine on an unforgettable cultural adventure.</p>
+                  <a href="#japantour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#japanModal">View Packages</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 py-3 py-md-0 my-0 my-lg-2">
+              <div class="card" >
+                <img src="./assets/images/taiwan.jpg" class="card-img-top w-100" alt="uk">
+                <div class="card-body">
+                  <h3 class="card-title">Taiwan Tour</h3>
+                  <p class="card-text">Discover the beauty of Taiwan in a compact tour! Explore vibrant Taipei, stunning Taroko Gorge, scenic Sun Moon Lake, and rich cultural heritage at temples and night markets. Perfect blend of nature, history, and local flavors—all in one unforgettable trip.</p>
+                  <a href="#taiwantour" type="button" class="btn" id="btn-new" data-bs-toggle="modal" data-bs-target="#taiwanModal">View Packages</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

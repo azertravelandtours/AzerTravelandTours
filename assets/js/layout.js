@@ -34,3 +34,5 @@ document.addEventListener('scroll', scrollUp)
 			  + activeIndicator.dataset.bsSlideTo + '"]').classList.add('active')
 	  });
   });
+
+  
