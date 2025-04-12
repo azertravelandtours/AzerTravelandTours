@@ -17,7 +17,7 @@ document.addEventListener('scroll', scrollUp)
 
   function redirect()
   {
-  var url = "https://m.me/420634938450085";
+  var url = "https://www.messenger.com/t/100934352821697/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0";
   window.location.href = url;
   }
 
