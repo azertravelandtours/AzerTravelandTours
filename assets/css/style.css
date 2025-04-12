@@ -695,12 +695,6 @@ color: #03989e;
     padding: 40px;
     border: 1px solid #e4d6d6;
   }
-  .quote-container:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-    border: none;
-  }
   
   .bottom {
     position: absolute;
